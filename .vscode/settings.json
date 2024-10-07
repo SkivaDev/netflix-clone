@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "project",
         "navbar",
-        "hooks"
+        "hooks",
+        "home"
     ]
 }
