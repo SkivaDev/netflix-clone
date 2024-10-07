@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "project",
-        "navbar"
+        "navbar",
+        "hooks"
     ]
 }
