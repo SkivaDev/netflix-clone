@@ -3,6 +3,7 @@
         "project",
         "navbar",
         "hooks",
-        "home"
+        "home",
+        "login"
     ]
 }
