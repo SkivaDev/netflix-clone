@@ -15,6 +15,8 @@ import { Input } from "@/components/ui/input";
 import { formSchema } from "./LoginForm.form";
 import { useState } from "react";
 import { FormError } from "./FormError";
+import { login } from "@/actions/login";
+import { toast } from "@/hooks/use-toast";
 
 
 
@@ -32,12 +34,25 @@ export const LoginForm = () => {
   });
 
   // 2. Define a submit handler.
-  const onSubmit = (values: z.infer<typeof formSchema>) => {
-    console.log(values);
+  const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    try {
+      console.log(values);
+      login(values).then((data) => {
+        setError(data?.error)
+        if(data?.success) {
+          toast({
+            title: 'Inicio de sesión exitoso',
+          })
+        }
+      })
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   return (
     <Form {...form}>
+
       <form onSubmit={form.handleSubmit(onSubmit)} className="w-full gap-4 flex flex-col">
         <FormField
           control={form.control}

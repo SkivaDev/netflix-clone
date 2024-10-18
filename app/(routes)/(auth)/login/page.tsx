@@ -4,10 +4,13 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Terms } from '../components/Terms'
 import { LoginForm } from './LoginForm'
 
-const LoginPage = () => {
+const LoginPage = async () => {
+
+
   return (
     <div>
         <p className="text-3xl font-bold text-left mb-7">Iniciar sesión</p>
+
         <LoginForm />
 
         <div className="mt-5 text-center">
@@ -35,4 +38,4 @@ const LoginPage = () => {
   )
 }
 
-export default LoginPage
+export default LoginPage;
