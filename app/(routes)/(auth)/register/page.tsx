@@ -1,13 +1,14 @@
 import Link from 'next/link'
 import React from 'react'
 import { Terms } from '../components/Terms'
+import { RegisterForm } from './RegisterForm'
 
 const RegisterPage = () => {
   return (
     <div>
         <p className="text-3xl font-bold text-left mb-7">Registro de usuario</p>
 
-        <p>Register form..</p>
+        <RegisterForm />
 
         <div className='mt-4 flex gap-1'>
             <p className="text-white opacity-70">¿Ya tienes cuenta?</p>
