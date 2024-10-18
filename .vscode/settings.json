@@ -4,6 +4,7 @@
         "navbar",
         "hooks",
         "home",
-        "login"
+        "login",
+        "register"
     ]
 }
