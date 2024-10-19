@@ -5,6 +5,7 @@
         "hooks",
         "home",
         "login",
-        "register"
+        "register",
+        "profiles"
     ]
 }

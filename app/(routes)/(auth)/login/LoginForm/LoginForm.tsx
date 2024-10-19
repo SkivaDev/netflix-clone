@@ -17,10 +17,13 @@ import { useState } from "react";
 import { FormError } from "./FormError";
 import { login } from "@/actions/login";
 import { toast } from "@/hooks/use-toast";
+import { useRouter } from "next/navigation";
 
 
 
 export const LoginForm = () => {
+
+  const route = useRouter();
 
   const [error, setError] = useState<string | undefined>("");
 
@@ -45,6 +48,7 @@ export const LoginForm = () => {
           })
         }
       })
+      route.push('/')
     } catch (error) {
       console.log(error);
     }
