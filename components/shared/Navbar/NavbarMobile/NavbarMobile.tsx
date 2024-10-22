@@ -8,8 +8,13 @@ import { Logo } from "@/components/shared/Logo";
 import { BellRing, Menu, Search } from "lucide-react";
 import { itemsNavbar } from "@/data/ItemsNavbar";
 import Link from "next/link";
+import { NavbarMobileProps } from "./NavbarMobile.types";
+import { SelectorProfile } from "@/components/shared/SelectorProfile";
 
-export const NavbarMobile = () => {
+export const NavbarMobile = (props: NavbarMobileProps) => {
+
+  const { users } = props;
+
   return (
     <div className="p-4 flex justify-between">
       <Logo />
@@ -30,7 +35,7 @@ export const NavbarMobile = () => {
             <div className="flex justify-between gap-6 mt-4">
                 <Search className="cursor-pointer" />
                 <BellRing className="cursor-pointer" />
-                <p>User</p>
+                <SelectorProfile users={users} />
           </div>
         </SheetContent>
       </Sheet>

@@ -13,7 +13,7 @@ export const Navbar = (props: NavbarProps) => {
             <NavbarDesktop users={users}/>
         </div>
         <div className='md:hidden'>
-            <NavbarMobile />
+            <NavbarMobile users={users}/>
         </div>
     </nav>
   )
