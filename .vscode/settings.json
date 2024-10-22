@@ -6,6 +6,7 @@
         "home",
         "login",
         "register",
-        "profiles"
+        "profiles",
+        "movies"
     ]
 }
