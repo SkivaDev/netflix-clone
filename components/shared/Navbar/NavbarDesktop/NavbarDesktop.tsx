@@ -7,8 +7,12 @@ import { Logo } from "@/components/shared/Logo";
 import { itemsNavbar } from "@/data/ItemsNavbar";
 import Link from "next/link";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
+import { NavbarDesktopProps } from "./NavbarDesktop.types";
+import { SelectorProfile } from "@/components/shared/SelectorProfile";
 
-export const NavbarDesktop = () => {
+export const NavbarDesktop = (props: NavbarDesktopProps) => {
+
+  const { users } = props;	
 
   const scrollPosition = useScrollPosition();
 
@@ -36,7 +40,7 @@ export const NavbarDesktop = () => {
             <Search className="cursor-pointer" />
             <BellRing className="cursor-pointer" />
             <div className="flex gap-2 items-center">
-              <p>Username</p>
+              <SelectorProfile users={users} />
             </div>
           </div>
         </div>
