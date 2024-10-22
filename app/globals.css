@@ -7,13 +7,11 @@
   --foreground: #fff;
 }
 
-html, body :root {
+html,
+body,
+:root {
   height: 100%;
   color: white;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
