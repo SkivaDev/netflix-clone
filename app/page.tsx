@@ -4,6 +4,7 @@ import { SliderVideo } from "./(home)/components/SliderVideo";
 import { redirect } from "next/navigation";
 import { auth } from "@/auth";
 import { db } from "@/lib/db";
+import { TrendingMovies } from "./(home)/components/TrendingMovies";
 
 export default async function Home() {
 
@@ -33,6 +34,8 @@ export default async function Home() {
       <Navbar users={userNetflix}/>
       <SliderVideo />
 
+
+      <TrendingMovies movies={trendingMovies}/>
       <div className="h-screen"/>
       <p>Section</p>
       <div className="h-screen"/>
