@@ -5,6 +5,7 @@ import { redirect } from "next/navigation";
 import { auth } from "@/auth";
 import { db } from "@/lib/db";
 import { TrendingMovies } from "./(home)/components/TrendingMovies";
+import { ListMovies } from "./(home)/components/ListMovies";
 
 export default async function Home() {
 
@@ -36,19 +37,9 @@ export default async function Home() {
 
 
       <TrendingMovies movies={trendingMovies}/>
-      <div className="h-screen"/>
-      <p>Section</p>
-      <div className="h-screen"/>
-      <p>Section</p>
-      <div className="h-screen"/>
-      <p>Section</p>
-      <div className="h-screen"/>
-      <p>Section</p>
-      <div className="h-screen"/>
-      <p>Section</p>
-      <div className="h-screen"/>
-      <p>Section</p>
-      <div className="h-screen"/>
+
+      <ListMovies movies={movies} />
+
     </div>
   );
 }
