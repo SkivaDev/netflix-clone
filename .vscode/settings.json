@@ -7,6 +7,7 @@
         "login",
         "register",
         "profiles",
-        "movies"
+        "movies",
+        "global components"
     ]
 }
