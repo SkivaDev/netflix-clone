@@ -1,11 +1,11 @@
 import { Navbar } from "@/components/shared/Navbar";
-import { SliderVideo } from "./(home)/components/SliderVideo";
 
 import { redirect } from "next/navigation";
 import { auth } from "@/auth";
 import { db } from "@/lib/db";
-import { TrendingMovies } from "./(home)/components/TrendingMovies";
-import { ListMovies } from "./(home)/components/ListMovies";
+import { ListMovies } from "./(routes)/(home)/components/ListMovies";
+import { TrendingMovies } from "./(routes)/(home)/components/TrendingMovies";
+import { SliderVideo } from "./(routes)/(home)/components/SliderVideo";
 
 export default async function Home() {
 
