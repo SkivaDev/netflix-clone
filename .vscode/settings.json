@@ -8,6 +8,7 @@
         "register",
         "profiles",
         "movies",
-        "global components"
+        "global components",
+        "movie"
     ]
 }
